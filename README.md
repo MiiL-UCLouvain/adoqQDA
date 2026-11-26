@@ -73,7 +73,7 @@ data_ (Working paper, version 1). UCLouvain, Media Innovation and Intelligibilit
 
 ## Getting started
 
-1. Download `adoq-QDA-0.4.3.html` from the [Releases](https://gregoirelits.eu/app/QDA-MD-Student/)) page.
+1. Download `adoq-QDA-0.4.3.html` from the [Releases](https://gregoirelits.eu/app/adoqQDA/)) page.
 2. Double-click it. It opens in your browser.
 3. Click **Projet d'exemple** for a guided tour, or **Nouveau projet** to start.
 
@@ -83,7 +83,7 @@ Chrome or Edge is recommended, because projects are then saved automatically. To
 
 The user manual is in French and is published as a separate website:
 
-https://gregoirelits.eu/app/QDA-MD-Student/ **MANUAL-URL**
+https://gregoirelits.eu/app/adoqQDA/ **MANUAL-URL**
 
 Its sources are in [`manual/`](manual/) (MkDocs). See [`manual/README.md`](manual/README.md) to build it or publish it elsewhere.
 
