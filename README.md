@@ -178,21 +178,13 @@ The architecture is described in [`docs/architecture.fr.md`](docs/architecture.f
 
 ## About this project
 
-adoq QDA was developed by Grégoire Lits (UCLouvain, Institut Langage et Communication, Media Innovation and Intelligibility Lab - MiiL). It was designed and written with intensive use of Claude Opus 5.5 (Anthropic), as part of an experiment on the use of a large language model in qualitative research and in the design of qualitative analysis software.
+adoq QDA was developed by Grégoire Lits (UCLouvain, Institut Langage et Communication, Media Innovation and Intelligibility Lab - MiiL). 
 
 Until version 0.2.2, the software was called *QDA-md Étude*. "adoq" comes from *analyse de données qualitatives*; QDA stands for *qualitative data analysis*.
 
-## Ai disclosure
+## AI disclosure
 
 adoq QDA was designed and written with intensive use of Claude Opus 5.5 (Anthropic), as part of an experiment on the use of a large language model in qualitative research and in the design of qualitative analysis software.
-
-Until version 0.2.2, the software was called *QDA-md Étude*. "adoq" comes from *analyse de données qualitatives*; QDA stands for *qualitative data analysis*.
-
-### How to cite
-
-If you use adoq QDA or the qda.md format in your work, please cite the  MiiL working paper presenting the qda.md open format: 
-Lits, G. (2026). qda.md: An open, readable and durable format for coded qualitative
-data (Working paper, version 1). UCLouvain, Media Innovation and Intelligibility Lab. https://github.com/MiiL-UCLouvain/qdamd-format/blob/main/paper/fr/qdamd-working-paper.pdf
 
 ## License
 
