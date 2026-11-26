@@ -1,0 +1,42 @@
+site_name: adoq QDA — Manuel
+site_description: Manuel d’adoq QDA (Analyse de données qualitatives), logiciel d’apprentissage du codage qualitatif d’entretiens
+site_author: Grégoire Lits
+copyright: adoq QDA 0.4.3 — Grégoire Lits, UCLouvain
+use_directory_urls: false
+theme:
+  name: readthedocs
+  custom_dir: overrides
+  logo: img/adoq-logo.svg
+  locale: fr
+  highlightjs: false
+  navigation_depth: 2
+  collapse_navigation: false
+  sticky_navigation: true
+  prev_next_buttons_location: bottom
+markdown_extensions:
+  - toc:
+      permalink: "¶"
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+extra_css:
+  - extra.css
+nav:
+  - Accueil: index.md
+  - Démarrer:
+      - Installer et ouvrir: demarrer/installer.md
+      - Prise en main rapide: demarrer/prise-en-main.md
+      - Préparer ses retranscriptions: demarrer/preparer-retranscription.md
+  - Fonctionnalités:
+      - Importer des entretiens: fonctions/importer.md
+      - Coder: fonctions/coder.md
+      - L’arbre de codes: fonctions/arbre.md
+      - Extraits et exports: fonctions/extraits-exports.md
+      - Travailler à plusieurs: fonctions/a-plusieurs.md
+      - Vue enseignant: fonctions/enseignant.md
+  - Concepts:
+      - Le fichier projet et glossaire: concepts/format.md
+  - FAQ:
+      - Données et confidentialité: faq/confidentialite.md
+      - Questions fréquentes: faq/questions.md

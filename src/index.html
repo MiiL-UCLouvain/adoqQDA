@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 -34 140 140"%3E%3Cellipse cx="56" cy="36" rx="50" ry="32" fill="#E1F5EE" stroke="#0F6E56" stroke-width="5"/%3E%3Cpolygon points="104,36 137,6 137,66" fill="#0F6E56"/%3E%3Ccircle cx="21" cy="27" r="5" fill="#0F6E56"/%3E%3Crect x="34" y="19" width="50" height="9" rx="4.5" fill="#EF9F27"/%3E%3Crect x="34" y="32" width="58" height="9" rx="4.5" fill="#378ADD"/%3E%3Crect x="34" y="45" width="42" height="9" rx="4.5" fill="#D85A30"/%3E%3C/svg%3E">
+<title>adoq QDA — Analyse de données qualitatives</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f5f5b'/%3E%3Crect x='7' y='9' width='18' height='3' rx='1.5' fill='%23fff'/%3E%3Crect x='7' y='15' width='12' height='3' rx='1.5' fill='%23f2c14e'/%3E%3Crect x='7' y='21' width='15' height='3' rx='1.5' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+/*CSS*/
+</style>
+</head>
+<body>
+<div id="app">
+  <header id="top">
+    <div class="brand" title="adoq QDA — Analyse de données qualitatives"><svg class="logo" viewBox="0 0 140 72" aria-hidden="true"><ellipse cx="56" cy="36" rx="50" ry="32" fill="#E1F5EE" stroke="#0F6E56" stroke-width="4"/><polygon points="104,36 137,8 137,64" fill="#0F6E56"/><circle cx="21" cy="27" r="4.5" fill="#0F6E56"/><rect x="34" y="20" width="50" height="8" rx="4" fill="#EF9F27"/><rect x="34" y="33" width="58" height="8" rx="4" fill="#378ADD"/><rect x="34" y="46" width="42" height="8" rx="4" fill="#D85A30"/></svg>adoq <em>QDA</em></div>
+    <button id="title" class="ghost" title="Renommer le projet"></button>
+    <nav id="menu">
+      <button data-act="new">Nouveau</button>
+      <button data-act="open">Ouvrir…</button>
+      <button data-act="save" id="saveBtn">Enregistrer</button>
+      <span id="status" class="status"></span>
+      <span class="sep"></span>
+      <button data-act="import" class="needs-p" title="Importer des entretiens (.txt, .docx)">＋ Importer</button>
+      <div class="drop needs-p">
+        <button>Exporter ▾</button>
+        <div class="dropmenu">
+          <button data-act="saveas">Enregistrer une copie du projet (.qda.md)…</button>
+          <button data-act="exp-folder">Projet en dossier : un fichier par entretien (.zip)</button>
+          <button data-act="exp-codebook">Livre de codes : arbre et définitions (.md)</button>
+          <button data-act="exp-seg">Segments codés (.csv)</button>
+          <button data-act="exp-matrix">Matrice documents × codes (.csv)</button>
+          <button data-act="exp-spk">Matrice locuteurs × codes (.csv)</button>
+          <hr>
+          <button data-act="backups">Sauvegardes et données du navigateur…</button>
+          <button data-act="teacher">Vue enseignant…</button>
+        </div>
+      </div>
+      <button data-act="compare" class="needs-p" title="Fusionner la copie d’un·e collègue et mesurer l’accord">Comparer les codeurs</button>
+      <button data-act="undo" class="icon needs-p" title="Annuler (Ctrl+Z)">↶</button>
+      <button data-act="redo" class="icon needs-p" title="Rétablir (Ctrl+Y)">↷</button>
+      <button data-act="help" class="icon" title="Aide">?</button>
+    </nav>
+    <label class="coder" title="Votre identifiant : il accompagne chacun de vos codages">Codeur&nbsp;@<input id="coder" placeholder="votre identifiant" size="9"></label>
+  </header>
+
+  <main id="home"></main>
+
+  <main id="work" hidden>
+    <aside id="left">
+      <div class="panel-h">Documents</div>
+      <input id="search" type="search" placeholder="Rechercher dans le corpus…">
+      <div id="searchres"></div>
+      <ul id="docs"></ul>
+      <button class="add" data-act="import">＋ Importer des entretiens</button>
+      <div id="stats"></div>
+    </aside>
+    <section id="center">
+      <div id="dochead"></div>
+      <div id="memo" hidden><textarea id="memotext" placeholder="Mémo du document : impressions, contexte de l'entretien, pistes d'analyse…"></textarea></div>
+      <div id="paras"></div>
+    </section>
+    <aside id="right">
+      <div class="panel-h">Codes</div>
+      <div id="treebar"></div>
+      <div id="tree"></div>
+      <div id="rootdrop">Déposer ici pour placer un code au premier niveau</div>
+      <div class="mine"><label>Afficher <select id="viewsel"></select></label><div class="hint" id="viewhint"></div></div>
+    </aside>
+  </main>
+</div>
+
+<div id="pop" hidden>
+  <input id="popq" placeholder="Chercher ou créer un code…" autocomplete="off">
+  <div id="poplist"></div>
+  <div class="pophint">Entrée : coder · Échap : fermer</div>
+</div>
+<div id="toast"></div>
+<dialog id="dlg"><form method="dialog" id="dlgform"><h2 id="dlgtitle"></h2><div id="dlgbody"></div><div id="dlgbtns"></div></form></dialog>
+<input type="file" id="fileOpen" accept=".md,.txt" hidden>
+<input type="file" id="fileImport" accept=".txt,.docx,.md,.zip" multiple hidden>
+<input type="file" id="fileOther" accept=".md" hidden>
+<input type="file" id="fileMulti" accept=".md" multiple hidden>
+<input type="file" id="fileDir" webkitdirectory multiple hidden>
+<input type="file" id="fileProj" accept=".zip,.md" hidden>
+
+<script>
+/*CORE*/
+</script>
+<script>
+/*APP*/
+</script>
+</body>
+</html>

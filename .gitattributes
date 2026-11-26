@@ -1,0 +1,9 @@
+# Keep LF line endings everywhere, including on Windows checkouts
+* text=auto eol=lf
+
+# The test fixtures are compared byte for byte: never convert them
+tests/fixtures/** -text
+
+*.png binary
+*.docx binary
+*.zip binary

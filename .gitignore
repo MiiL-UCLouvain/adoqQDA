@@ -1,0 +1,23 @@
+# Build output (the app file is attached to each release)
+dist/
+
+# Test and benchmark output
+tests/shots/
+__pycache__/
+*.pyc
+
+# Manual build output
+manual/site/
+manual/build/
+manual/docs/adoq-QDA-*.html
+
+# Editors and systems
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.obsidian/
+
+# Never commit real interview data
+*.qda.md
+!tests/fixtures/*.qda.md

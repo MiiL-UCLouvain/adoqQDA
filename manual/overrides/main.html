@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block extrahead %}
+<link rel="icon" type="image/svg+xml" href="{{ 'img/adoq-icon.svg'|url }}">
+{% endblock %}
+{% block site_name %}
+<a href="{{ nav.homepage.url|url }}" class="adoq-brand">
+  <img src="{{ config.theme.logo|url }}" class="logo" alt="">
+  <span class="adoq-name">adoq <b>QDA</b></span>
+  <span class="adoq-sub">Analyse de données qualitatives</span>
+</a>
+{% endblock %}

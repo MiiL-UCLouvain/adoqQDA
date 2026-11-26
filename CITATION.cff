@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use the qda.md format, please cite its specification as below."
+title: "Specification of the qda.md format (version 1)"
+version: "1 (draft 0.2)"
+date-released: "2026-11-26"
+license: EUPL-1.2
+authors:
+  - family-names: "Lits"
+    given-names: "Grégoire"
+    affiliation: "UCLouvain, Institut Langage et Communication, Media Innovation and Intelligibility Lab (MiiL)"
+abstract: >-
+  Specification of an open, plain-text Markdown file format for qualitative
+  coding projects: texts, code tree, codings, memos, consensus decisions and
+  the history of the coding frame. A project is stored either in a single
+  .qda.md file or in a folder (an arbre.md file and one file per document).
+  It is readable by people, editable in Obsidian and parsable by software.
+keywords:
+  - qualitative analysis
+  - CAQDAS
+  - coding
+  - file format
+  - Markdown
+  - interoperability
+  - archiving
+  - open science
+# To complete after the first Zenodo release:
+# doi: "10.5281/zenodo.XXXXXXX"
+# repository-code: "https://github.com/<organisation>/qdamd-format"
+references:
+  - type: report
+    title: "qda.md: An open, readable and durable format for coded qualitative data"
+    authors:
+      - family-names: "Lits"
+        given-names: "Grégoire"
+    year: 2026
+    institution:
+      name: "UCLouvain, Media Innovation and Intelligibility Lab"
+    notes: "Working paper, version 1. Available in French and English."
+    license: CC-BY-4.0
