@@ -28,11 +28,12 @@ Projects are stored in the **qda.md format**: plain Markdown files that a person
 
 adoq QDA is optimised for learning and teaching. It takes a few minutes to get started, fits in one file, and helps teachers follow a group's work. It is probably robust enough for a sizeable corpus (several hundred interviews open in a few seconds), but it is **not recommended for large corpora analysed by professional research teams**. Such teams need features the tool deliberately leaves out: simultaneous work on the same project, access rights, audio and video coding, and advanced queries.
 
-### How to cite
+## How to cite
 
 If you use adoq QDA or the qda.md format in your work, please cite the  MiiL working paper presenting the qda.md open format: 
-Lits, G. (2026). qda.md: An open, readable and durable format for coded qualitative
-data (Working paper, version 1). UCLouvain, Media Innovation and Intelligibility Lab. https://github.com/MiiL-UCLouvain/qdamd-format/blob/main/paper/fr/qdamd-working-paper.pdf
+
+Lits, G. (2026). _qda.md: An open, readable and durable format for coded qualitative
+data_ (Working paper, version 1). UCLouvain, Media Innovation and Intelligibility Lab. https://github.com/MiiL-UCLouvain/qdamd-format/blob/main/paper/fr/qdamd-working-paper.pdf
 
 ## Features
 
