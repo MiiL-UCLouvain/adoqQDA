@@ -28,6 +28,12 @@ Projects are stored in the **qda.md format**: plain Markdown files that a person
 
 adoq QDA is optimised for learning and teaching. It takes a few minutes to get started, fits in one file, and helps teachers follow a group's work. It is probably robust enough for a sizeable corpus (several hundred interviews open in a few seconds), but it is **not recommended for large corpora analysed by professional research teams**. Such teams need features the tool deliberately leaves out: simultaneous work on the same project, access rights, audio and video coding, and advanced queries.
 
+### How to cite
+
+If you use adoq QDA or the qda.md format in your work, please cite the  MiiL working paper presenting the qda.md open format: 
+Lits, G. (2026). qda.md: An open, readable and durable format for coded qualitative
+data (Working paper, version 1). UCLouvain, Media Innovation and Intelligibility Lab. https://github.com/MiiL-UCLouvain/qdamd-format/blob/main/paper/fr/qdamd-working-paper.pdf
+
 ## Features
 
 **Data**
@@ -66,7 +72,7 @@ adoq QDA is optimised for learning and teaching. It takes a few minutes to get s
 
 ## Getting started
 
-1. Download `adoq-QDA-<version>.html` from the [Releases](../../releases) page.
+1. Download `adoq-QDA-0.4.3.html` from the [Releases](https://gregoirelits.eu/app/QDA-MD-Student/)) page.
 2. Double-click it. It opens in your browser.
 3. Click **Projet d'exemple** for a guided tour, or **Nouveau projet** to start.
 
@@ -76,7 +82,7 @@ Chrome or Edge is recommended, because projects are then saved automatically. To
 
 The user manual is in French and is published as a separate website:
 
-**<!-- TODO: replace with the address of the published manual --> MANUAL-URL**
+https://gregoirelits.eu/app/QDA-MD-Student/ **MANUAL-URL**
 
 Its sources are in [`manual/`](manual/) (MkDocs). See [`manual/README.md`](manual/README.md) to build it or publish it elsewhere.
 
@@ -119,7 +125,7 @@ The format has a few key properties:
 
 The format is shared with QDA-md and is specified in its own repository:
 
-**<!-- TODO: replace with the address of the format repository --> FORMAT-REPOSITORY-URL**
+**https://github.com/MiiL-UCLouvain/qdamd-format FORMAT-REPOSITORY-URL**
 
 The format keywords (`# Arbre de codes`, `document::`, `locuteur::`, `[!codage]`…) are in French. They are part of the format, not of the interface.
 
@@ -171,14 +177,21 @@ The architecture is described in [`docs/architecture.fr.md`](docs/architecture.f
 
 ## About this project
 
-adoq QDA was developed by Grégoire Lits (UCLouvain, Institut Langage et Communication, Media Innovation and Intelligibility Lab — MiiL). It was designed and written with intensive use of Claude Opus 5.5 (Anthropic), as part of an experiment on the use of a large language model in qualitative research and in the design of qualitative analysis software.
+adoq QDA was developed by Grégoire Lits (UCLouvain, Institut Langage et Communication, Media Innovation and Intelligibility Lab - MiiL). It was designed and written with intensive use of Claude Opus 5.5 (Anthropic), as part of an experiment on the use of a large language model in qualitative research and in the design of qualitative analysis software.
 
 Until version 0.2.2, the software was called *QDA-md Étude*. "adoq" comes from *analyse de données qualitatives*; QDA stands for *qualitative data analysis*.
 
-### Citation
+## Ai disclosure
 
-<!-- TODO: add the reference and DOI of the working paper on the qda.md format -->
-If you use adoq QDA or the qda.md format in your work, please cite: WORKING-PAPER-REFERENCE.
+adoq QDA was designed and written with intensive use of Claude Opus 5.5 (Anthropic), as part of an experiment on the use of a large language model in qualitative research and in the design of qualitative analysis software.
+
+Until version 0.2.2, the software was called *QDA-md Étude*. "adoq" comes from *analyse de données qualitatives*; QDA stands for *qualitative data analysis*.
+
+### How to cite
+
+If you use adoq QDA or the qda.md format in your work, please cite the  MiiL working paper presenting the qda.md open format: 
+Lits, G. (2026). qda.md: An open, readable and durable format for coded qualitative
+data (Working paper, version 1). UCLouvain, Media Innovation and Intelligibility Lab. https://github.com/MiiL-UCLouvain/qdamd-format/blob/main/paper/fr/qdamd-working-paper.pdf
 
 ## License
 
